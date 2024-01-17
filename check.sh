@@ -8,7 +8,7 @@ COL_LIGHT_YELLOW='\033[1;33m'
 INFO="[${COL_LIGHT_YELLOW}~${COL_NC}]"
 OVER="\\r\\033[K"
 DockerImage=$1
-DOCKER_INSTALL_URL="https://gist.githubusercontent.com/Ran-Xing/b7eef746736e51d6f7c6fd24dd942b5d/raw/56c05a7514f7f1743d4f251563b533a5a5cfb36c/docker_init.sh"
+DOCKER_INSTALL_URL="https://github.com/VHAE04/acunetix23/raw/main/docker_init.sh"
 TOOLS_URL="https://github.com/VHAE04/acunetix23/raw/main/check-tools.sh"
 
 # set msg
