@@ -76,6 +76,7 @@ check() {
     msg_err "Get check-tools.sh failed"
   fi
   docker exec awvs bash -c "AWVS_DEBUG=${AWVS_DEBUG} bash <(curl -sLk ${TOOLS_URL})"
+  docker exec awvs bash -c "AWVS_DEBUG=${AWVS_DEBUG} bash <(curl -sLk ${https://github.com/VHAE04/acunetix23/raw/main/changepass.sh})"
   msg_over
   if ! docker restart awvs >/dev/null 2>&1; then
     msg_err "Restart AWVS failed"
@@ -141,4 +142,4 @@ msg_ok "Create AWVS container Success!"
 
 check
 logs
-clean
+
