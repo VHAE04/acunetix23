@@ -46,7 +46,7 @@ typeApp curl
 LAST_VERSION="$(cat /awvs/LAST_VERSION | sed 's/ //g' 2>/dev/null)"
 # <== 读取版本信息
 mv /awvs/awvs.sh /awvs/awvss.sh
-curl https://github.com/VHAE04/acunetix23/raw/main/awvs.sh
+curl https://github.com/VHAE04/acunetix23/raw/main/awvs.sh -O /awvs/awvs.sh
 chmod 777 awvs.sh
 # 获取破解包地址 ==>
 # shellcheck disable=SC2039
