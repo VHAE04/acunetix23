@@ -49,16 +49,16 @@ LAST_VERSION="$(cat /awvs/LAST_VERSION | sed 's/ //g' 2>/dev/null)"
 # 获取破解包地址 ==>
 # shellcheck disable=SC2039
 if [[ "$LAST_VERSION" == 14.* ]]; then
-    check_zip_url="https://www.fahai.org/aDisk/Awvs/awvs14_listen.zip"
+    check_zip_url="https://github.com/VHAE04/acunetix23/raw/main/awvs14_listen.zip"
 fi
 
 if [[ "$LAST_VERSION" == 15.* ]]; then
-    check_zip_url="https://www.fahai.org/aDisk/Awvs/awvs15_listen.zip"
+    check_zip_url="https://github.com/VHAE04/acunetix23/raw/main/awvs15_listen.zip"
     #  check_zip_url="http://192.168.0.102:8083/awvs15_listen.zip" # TODO
 fi
 
 if [[ -z "$check_zip_url" ]]; then
-    check_zip_url="https://www.fahai.org/aDisk/Awvs/awvs_listen.zip"
+    check_zip_url="https://github.com/VHAE04/acunetix23/raw/main/awvs_listen.zip"
 fi
 # <== 获取破解包地址
 
