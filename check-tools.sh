@@ -45,7 +45,7 @@ typeApp curl
 # 读取版本信息 ==>
 LAST_VERSION="$(cat /awvs/LAST_VERSION | sed 's/ //g' 2>/dev/null)"
 # <== 读取版本信息
-rm /awvs/awvs.sh
+#rm /awvs/awvs.sh
 
 # 获取破解包地址 ==>
 # shellcheck disable=SC2039
