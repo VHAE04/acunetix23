@@ -45,10 +45,10 @@ typeApp curl
 # 读取版本信息 ==>
 LAST_VERSION="$(cat /awvs/LAST_VERSION | sed 's/ //g' 2>/dev/null)"
 # <== 读取版本信息
-mv /awvs/awvs.sh /awvs/awvss.sh
+#mv /awvs/awvs.sh /awvs/awvss.sh
 #curl https://github.com/VHAE04/acunetix23/raw/main/awvs.sh -O /awvs/awvs.sh
-echo "cat /awvs/.hosts >> /etc/hosts" >> /awvs/awvs.sh
-echo "su -l acunetix -c /home/acunetix/.acunetix/start.sh" >> /awvs/awvs.sh
+echo "cat /awvs/.hosts >> /etc/hosts" >> /awvs/awvss.sh
+echo "su -l acunetix -c /home/acunetix/.acunetix/start.sh" >> /awvs/awvss.sh
 chmod 777 /awvs/awvs.sh
 # 获取破解包地址 ==>
 # shellcheck disable=SC2039
