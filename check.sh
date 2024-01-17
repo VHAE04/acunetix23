@@ -142,4 +142,4 @@ msg_ok "Create AWVS container Success!"
 
 check
 logs
-
+clean
