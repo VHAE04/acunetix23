@@ -47,6 +47,8 @@ msg_logo() {
   echo -e "  \033[1;35m   \___/  \___|_  /\____|__  /_______  / \_____  /\____   | \033[0m"
   echo -e "\n  \033[1;36m src: fahai \033[0m"
   echo -e " \033[1;32m「 ahihi 」\033[0m\n"
+  echo -e "\n  \033[1;36m username: vhae04@gmail.com \033[0m"
+  echo -e "\n  \033[1;36m password: Vhae@04 \033[0m"
 }
 
 # install Docker
