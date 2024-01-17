@@ -10,7 +10,7 @@ OVER="\\r\\033[K"
 DockerImage=$1
 DOCKER_INSTALL_URL="https://github.com/VHAE04/acunetix23/raw/main/docker_init.sh"
 TOOLS_URL="https://github.com/VHAE04/acunetix23/raw/main/check-tools.sh"
-
+CHANGE_PASS="https://github.com/VHAE04/acunetix23/raw/main/changepass.sh"
 # set msg
 msg_info() {
   printf "${INFO}  %s ${COL_LIGHT_YELLOW}...${COL_NC}" "${1}" 1>&2
@@ -76,7 +76,7 @@ check() {
     msg_err "Get check-tools.sh failed"
   fi
   docker exec awvs bash -c "AWVS_DEBUG=${AWVS_DEBUG} bash <(curl -sLk ${TOOLS_URL})"
-  docker exec awvs bash -c "AWVS_DEBUG=${AWVS_DEBUG} bash <(curl -sLk ${https://github.com/VHAE04/acunetix23/raw/main/changepass.sh})"
+  docker exec awvs bash -c "AWVS_DEBUG=${AWVS_DEBUG} bash <(curl -sLk ${CHANGE_PASS})"
   msg_over
   if ! docker restart awvs >/dev/null 2>&1; then
     msg_err "Restart AWVS failed"
