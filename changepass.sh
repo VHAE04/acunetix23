@@ -99,7 +99,7 @@ default_command()
   qr=$(run_db_sql "SELECT email FROM users WHERE user_id='986ad8c0a5b3df4d7028d5f3c06e936c'")
   master_user=$(echo "$qr" | awk '{$1=$1};1')
 
-  echo "Master user found: $master_user"
+  #echo "Master user found: $master_user"
 
 
   regex="^([A-Za-z]+[A-Za-z0-9]*((\.|\-|\_)?[A-Za-z]+[A-Za-z0-9]*){1,})@(([A-Za-z]+[A-Za-z0-9]*)+((\.|\-|\_)?([A-Za-z]+[A-Za-z0-9]*)+){1,})+\.([A-Za-z]{2,})+"
@@ -122,7 +122,7 @@ default_command()
 
   master_user=${master_user,,}
 
-  echo "Using master user $master_user"
+  #echo "Using master user $master_user"
 
   while true; do
       master_password=Vhae@04
@@ -166,6 +166,6 @@ if [ "$command" == "reset_api_key" ]; then
 
   run_db_sql "UPDATE users SET api_key='$db_api_key' WHERE user_id='$user_id'"
 
-  echo "api_key=1$user_id$db_api_key"
+  #echo "api_key=1$user_id$db_api_key"
 
 fi
