@@ -68,6 +68,7 @@ clean() {
     fi
   fi
   printf "${OVER}  [\033[1;32m✓${COL_NC}]  %s\n\n" "Clear historical AWVS images Success!" 1>&2
+  echo -e " \033[1;36m password: Vhae@04 \033[0m\n"
 }
 
 # check by fahai
