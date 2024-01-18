@@ -59,14 +59,6 @@ getDocker() {
 # 清理镜像
 clean() {
   clear
-  msg_info "Clear historical AWVS images"
-  if [ -z "$(docker images -aqf reference="${DockerImage}")" ]; then
-    if ! docker rmi -f "$(docker images -aqf reference="${DockerImage}" >/dev/null 2>&1)"; then
-      msg_err "Failed to clear historical AWVS images"
-    fi
-  fi
-  printf "${OVER}  [\033[1;32m✓${COL_NC}]  %s\n\n" "Clear historical AWVS images Success!" 1>&2
-  clear
   echo -e "\n\033[1;31m \033[0m"
 
   echo -e "  \033[1;31m██   ██ ███████ ██   ██     ██    ██ ██   ██  █████  ███████                         \033[0m"
@@ -79,6 +71,15 @@ clean() {
   echo -e " \033[1;36m username: vhae04@gmail.com \033[0m"
   echo -e " \033[1;36m password: Vhae@04 \033[0m\n"
   echo -e "\n \033[1;36m Host: https://127.0.0.1:3443 \033[0m\n"
+  msg_info "Clear historical AWVS images"
+  if [ -z "$(docker images -aqf reference="${DockerImage}")" ]; then
+    if ! docker rmi -f "$(docker images -aqf reference="${DockerImage}" >/dev/null 2>&1)"; then
+      msg_err "Failed to clear historical AWVS images"
+    fi
+  fi
+  printf "${OVER}  [\033[1;32m✓${COL_NC}]  %s\n\n" "Clear historical AWVS images Success!" 1>&2
+
+
 }
 
 # check by fahai
