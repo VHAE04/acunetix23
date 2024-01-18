@@ -46,9 +46,6 @@ msg_logo() {
   echo -e "  \033[1;34m  \     /\    Y    /    |    \|       \ \  \_/   \/    ^  /\033[0m"
   echo -e "  \033[1;35m   \___/  \___|_  /\____|__  /_______ /  \_____  /\____  | .\033[0m"
   echo -e "\n  \033[1;36m src: fahai \033[0m"
-  echo -e " \033[1;32m「 account day heh >< 」\033[0m"
-  echo -e " \033[1;36m username: vhae04@gmail.com \033[0m"
-  echo -e " \033[1;36m password: Vhae@04 \033[0m\n"
 }
 
 # install Docker
@@ -68,7 +65,11 @@ clean() {
     fi
   fi
   printf "${OVER}  [\033[1;32m✓${COL_NC}]  %s\n\n" "Clear historical AWVS images Success!" 1>&2
+  clear
+  echo -e " \033[1;32m「 account day heh >< 」\033[0m"
+  echo -e " \033[1;36m username: vhae04@gmail.com \033[0m"
   echo -e " \033[1;36m password: Vhae@04 \033[0m\n"
+  echo -e " \033[1;36m Host: https://127.0.0.1:3443 \033[0m\n"
 }
 
 # check by fahai
