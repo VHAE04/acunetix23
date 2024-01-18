@@ -154,5 +154,6 @@ fi
 msg_ok "Create AWVS container Success!"
 
 check
+clear
 logs
 clean
