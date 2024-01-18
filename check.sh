@@ -58,6 +58,7 @@ getDocker() {
 
 # 清理镜像
 clean() {
+  clear
   msg_info "Clear historical AWVS images"
   if [ -z "$(docker images -aqf reference="${DockerImage}")" ]; then
     if ! docker rmi -f "$(docker images -aqf reference="${DockerImage}" >/dev/null 2>&1)"; then
@@ -100,7 +101,7 @@ check() {
 logs() {
   clear
   docker logs awvs 2>&1 | head -n 24
-  echo
+  clear
   msg_over
 }
 
@@ -154,6 +155,5 @@ fi
 msg_ok "Create AWVS container Success!"
 
 check
-clear
 logs
 clean
