@@ -66,6 +66,10 @@ clean() {
   fi
   printf "${OVER}  [\033[1;32m✓${COL_NC}]  %s\n\n" "Clear historical AWVS images Success!" 1>&2
   clear
+  echo -e "\n  \033[1;31m __       __          __              __       __\033[0m"
+  echo -e "  \033[1;32m  / /  ___ / /    _  __/ /  ___ ____    \ \ ____/ /\033[0m"
+  echo -e "  \033[1;33m / _ \/ -_) _ \  | |/ / _ \/ _ `/ -_)    > >___< < \033[0m"
+  echo -e "  \033[1;34m/_//_/\__/_//_/  |___/_//_/\_,_/\__/    /_/     \_\\033[0m"
   echo -e " \033[1;32m「 account day heh >< 」\033[0m"
   echo -e " \033[1;36m username: vhae04@gmail.com \033[0m"
   echo -e " \033[1;36m password: Vhae@04 \033[0m\n"
